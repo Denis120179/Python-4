@@ -22,7 +22,6 @@ print(list)
 # исходной последовательности
 
 list1 = input()
-print(list1)
 list2 = list1.split()
 print(list2)
 list3 = []
