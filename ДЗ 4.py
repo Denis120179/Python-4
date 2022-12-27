@@ -58,4 +58,7 @@ for i in range(len(list)):
         m += '=0'
 print(m)
 
+file = open('text.txt','w')
+file.write(m)
+
 
