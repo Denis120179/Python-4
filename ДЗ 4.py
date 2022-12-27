@@ -42,5 +42,20 @@ for i in range(k+1):
     list.append(randint(1,101))
 print(list)
 
+m = '' # создаем запись многочлена
+for i in range(len(list)):
+    if i != len(list)-1 and list[i] != 0 and i != len(list)-2:
+        m += f'{list[i]}x^{len(list)-i-1}'
+        if list[i+1] != 0:
+            m +='+'
+    elif i == len(list)-2 and list[i] != 0:
+        m += f'{list[i]}x'
+        if list[i+1] != 0:
+            m += '+'
+    elif i == len(list)-1 and list[i] != 0:
+        m += f'{list[i]}=0'
+    elif i == len(list)-1 and list[i] == 0:
+        m += '=0'
+print(m)
 
 
