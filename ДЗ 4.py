@@ -4,6 +4,12 @@ from math import pi
 d = int(input("Введите значение точности расчета числа Пи: "))
 print(round(pi,d))
 '''
+'''
+import math
+n = input()
+length = len(n.split(".")[1])
+print(round(math.pi, length))
+'''
 
 # Задача 2 Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N
 '''
